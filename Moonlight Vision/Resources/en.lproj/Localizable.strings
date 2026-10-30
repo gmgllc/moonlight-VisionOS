@@ -42,7 +42,7 @@
 "refresh_status" = "Refresh Status";
 "force_refresh_status" = "Force Refresh Status";
 "offline" = "Offline";
-"offline_message" = "Moonlight cannot connect to this computer. Ensure it is turned on and connected to the network.";
+"offline_message" = "Moonpane cannot connect to this computer. Ensure it is turned on and connected to the network.";
 
 // Pairing
 "pairing" = "Pairing";

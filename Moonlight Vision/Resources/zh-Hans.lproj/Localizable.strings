@@ -42,7 +42,7 @@
 "refresh_status" = "刷新状态";
 "force_refresh_status" = "强制刷新状态";
 "offline" = "离线";
-"offline_message" = "Moonlight 无法连接到此电脑。请确保它已开机并连接到网络。";
+"offline_message" = "Moonpane 无法连接到此电脑。请确保它已开机并连接到网络。";
 
 // Pairing
 "pairing" = "配对";

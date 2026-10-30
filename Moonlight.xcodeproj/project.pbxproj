@@ -17,6 +17,9 @@
 		04F5ECAC2EE3759C009FF87D /* ImmersionStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5ECAB2EE3759C009FF87D /* ImmersionStyleManager.swift */; };
 		04F5ECAF2EE37A7F009FF87D /* StandardControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5ECAD2EE37A7F009FF87D /* StandardControlPanelView.swift */; };
 		04F5ECB12EE37A80009FF87D /* VolumeControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5ECB02EE37A80009FF87D /* VolumeControlPanelView.swift */; };
+		26348F5B3094331400C80FE2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348F5A3094331400C80FE2 /* libiconv.tbd */; };
+		26348F5D3094333700C80FE2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348F5C3094333700C80FE2 /* libz.tbd */; };
+		26348FE93094381C00C80FE2 /* SwrStubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 26348FD33094353800C80FE2 /* SwrStubs.c */; };
 		3E265EDC2F9D5BCA00B0A566 /* AUSpatialMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E265ED12F9D5BCA00B0A566 /* AUSpatialMixer.m */; };
 		3E265EDD2F9D5BCA00B0A566 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E265EDA2F9D5BCA00B0A566 /* TPCircularBuffer.c */; };
 		3E265EDE2F9D5BCA00B0A566 /* AVSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E265ED32F9D5BCA00B0A566 /* AVSync.m */; };
@@ -96,7 +99,7 @@
 		F7A1193B2B5DDF73001E8686 /* StreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB89461B19F646E200339C8A /* StreamManager.m */; };
 		F7A1193C2B5DDF73001E8686 /* KeyboardInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 988FCD40293B091B003050E2 /* KeyboardInputField.m */; };
 		F7A1193F2B5DDF73001E8686 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9890CF6A203B7EE1006C4B06 /* libxml2.tbd */; };
-		F7A119402B5DDF73001E8686 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AB2E841CAD46840089BB98 /* libmoonlight-common.a */; };
+		F7A119402B5DDF73001E8686 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AB2E841CAD46840089BB98 /* libmoonlight-common.a */; platformFilters = (ios, xros, ); };
 		F7A119432B5DDF73001E8686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB290CF319B2C406004C83CF /* CoreGraphics.framework */; };
 		F7A119442B5DDF73001E8686 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB290CF719B2C406004C83CF /* CoreData.framework */; };
 		F7A119452B5DDF73001E8686 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98181BEC2791281100E43572 /* CoreMotion.framework */; };
@@ -166,6 +169,134 @@
 		04F5ECAB2EE3759C009FF87D /* ImmersionStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersionStyleManager.swift; sourceTree = "<group>"; };
 		04F5ECAD2EE37A7F009FF87D /* StandardControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardControlPanelView.swift; sourceTree = "<group>"; };
 		04F5ECB02EE37A80009FF87D /* VolumeControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlPanelView.swift; sourceTree = "<group>"; };
+		26348F5A3094331400C80FE2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		26348F5C3094333700C80FE2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		26348F5E3094353800C80FE2 /* AllocatedAudioBufferList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllocatedAudioBufferList.h; sourceTree = "<group>"; };
+		26348F5F3094353800C80FE2 /* AllocatedAudioBufferList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllocatedAudioBufferList.m; sourceTree = "<group>"; };
+		26348F603094353800C80FE2 /* AudioStats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStats.h; sourceTree = "<group>"; };
+		26348F613094353800C80FE2 /* AudioStats.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioStats.m; sourceTree = "<group>"; };
+		26348F623094353800C80FE2 /* AUSpatialMixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUSpatialMixer.h; sourceTree = "<group>"; };
+		26348F633094353800C80FE2 /* AUSpatialMixer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUSpatialMixer.m; sourceTree = "<group>"; };
+		26348F643094353800C80FE2 /* AVSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSync.h; sourceTree = "<group>"; };
+		26348F653094353800C80FE2 /* AVSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVSync.m; sourceTree = "<group>"; };
+		26348F663094353800C80FE2 /* CoreAudioHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAudioHelpers.h; sourceTree = "<group>"; };
+		26348F673094353800C80FE2 /* CoreAudioRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAudioRenderer.h; sourceTree = "<group>"; };
+		26348F683094353800C80FE2 /* CoreAudioRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAudioRenderer.m; sourceTree = "<group>"; };
+		26348F693094353800C80FE2 /* OutputAU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputAU.h; sourceTree = "<group>"; };
+		26348F6A3094353800C80FE2 /* OutputAU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputAU.m; sourceTree = "<group>"; };
+		26348F6B3094353800C80FE2 /* TPCircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		26348F6C3094353800C80FE2 /* TPCircularBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		26348F6E3094353800C80FE2 /* CryptoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoManager.h; sourceTree = "<group>"; };
+		26348F6F3094353800C80FE2 /* CryptoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoManager.m; sourceTree = "<group>"; };
+		26348F703094353800C80FE2 /* IdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdManager.h; sourceTree = "<group>"; };
+		26348F713094353800C80FE2 /* IdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdManager.m; sourceTree = "<group>"; };
+		26348F723094353800C80FE2 /* mkcert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mkcert.h; sourceTree = "<group>"; };
+		26348F733094353800C80FE2 /* mkcert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkcert.c; sourceTree = "<group>"; };
+		26348F753094353800C80FE2 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		26348F763094353800C80FE2 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		26348F773094353800C80FE2 /* TemporarySettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemporarySettings.h; sourceTree = "<group>"; };
+		26348F783094353800C80FE2 /* TemporarySettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemporarySettings.m; sourceTree = "<group>"; };
+		26348F7A3094353800C80FE2 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		26348F7B3094353800C80FE2 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		26348F7C3094353800C80FE2 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		26348F7D3094353800C80FE2 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		26348F7E3094353800C80FE2 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		26348F7F3094353800C80FE2 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		26348F803094353800C80FE2 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		26348F813094353800C80FE2 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		26348F823094353800C80FE2 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		26348F833094353800C80FE2 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		26348F843094353800C80FE2 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		26348F853094353800C80FE2 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		26348F883094353800C80FE2 /* AbsoluteTouchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsoluteTouchHandler.h; sourceTree = "<group>"; };
+		26348F893094353800C80FE2 /* AbsoluteTouchHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbsoluteTouchHandler.m; sourceTree = "<group>"; };
+		26348F8A3094353800C80FE2 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		26348F8B3094353800C80FE2 /* Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		26348F8C3094353800C80FE2 /* ControllerSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerSupport.h; sourceTree = "<group>"; };
+		26348F8D3094353800C80FE2 /* ControllerSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerSupport.m; sourceTree = "<group>"; };
+		26348F8E3094353800C80FE2 /* HapticContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HapticContext.h; sourceTree = "<group>"; };
+		26348F8F3094353800C80FE2 /* HapticContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HapticContext.m; sourceTree = "<group>"; };
+		26348F903094353800C80FE2 /* KeyboardInputField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardInputField.h; sourceTree = "<group>"; };
+		26348F913094353800C80FE2 /* KeyboardInputField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardInputField.m; sourceTree = "<group>"; };
+		26348F923094353800C80FE2 /* KeyboardSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardSupport.h; sourceTree = "<group>"; };
+		26348F933094353800C80FE2 /* KeyboardSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardSupport.m; sourceTree = "<group>"; };
+		26348F943094353800C80FE2 /* Moonlight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moonlight-Bridging-Header.h"; sourceTree = "<group>"; };
+		26348F953094353800C80FE2 /* OnScreenControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnScreenControls.h; sourceTree = "<group>"; };
+		26348F963094353800C80FE2 /* OnScreenControls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnScreenControls.m; sourceTree = "<group>"; };
+		26348F973094353800C80FE2 /* RelativeTouchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeTouchHandler.h; sourceTree = "<group>"; };
+		26348F983094353800C80FE2 /* RelativeTouchHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelativeTouchHandler.m; sourceTree = "<group>"; };
+		26348F993094353800C80FE2 /* StreamView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamView.h; sourceTree = "<group>"; };
+		26348F9A3094353800C80FE2 /* StreamView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamView.m; sourceTree = "<group>"; };
+		26348F9C3094353800C80FE2 /* AppAssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAssetManager.h; sourceTree = "<group>"; };
+		26348F9D3094353800C80FE2 /* AppAssetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppAssetManager.m; sourceTree = "<group>"; };
+		26348F9E3094353800C80FE2 /* AppAssetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAssetResponse.h; sourceTree = "<group>"; };
+		26348F9F3094353800C80FE2 /* AppAssetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppAssetResponse.m; sourceTree = "<group>"; };
+		26348FA03094353800C80FE2 /* AppAssetRetriever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAssetRetriever.h; sourceTree = "<group>"; };
+		26348FA13094353800C80FE2 /* AppAssetRetriever.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppAssetRetriever.m; sourceTree = "<group>"; };
+		26348FA23094353800C80FE2 /* AppListResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppListResponse.h; sourceTree = "<group>"; };
+		26348FA33094353800C80FE2 /* AppListResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppListResponse.m; sourceTree = "<group>"; };
+		26348FA43094353800C80FE2 /* ConnectionHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionHelper.h; sourceTree = "<group>"; };
+		26348FA53094353800C80FE2 /* ConnectionHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionHelper.m; sourceTree = "<group>"; };
+		26348FA63094353800C80FE2 /* DiscoveryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryManager.h; sourceTree = "<group>"; };
+		26348FA73094353800C80FE2 /* DiscoveryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryManager.m; sourceTree = "<group>"; };
+		26348FA83094353800C80FE2 /* DiscoveryWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryWorker.h; sourceTree = "<group>"; };
+		26348FA93094353800C80FE2 /* DiscoveryWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryWorker.m; sourceTree = "<group>"; };
+		26348FAA3094353800C80FE2 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		26348FAB3094353800C80FE2 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		26348FAC3094353800C80FE2 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		26348FAD3094353800C80FE2 /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		26348FAE3094353800C80FE2 /* HttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		26348FAF3094353800C80FE2 /* HttpResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		26348FB03094353800C80FE2 /* MDNSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDNSManager.h; sourceTree = "<group>"; };
+		26348FB13094353800C80FE2 /* MDNSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDNSManager.m; sourceTree = "<group>"; };
+		26348FB23094353800C80FE2 /* PairManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PairManager.h; sourceTree = "<group>"; };
+		26348FB33094353800C80FE2 /* PairManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PairManager.m; sourceTree = "<group>"; };
+		26348FB43094353800C80FE2 /* ServerInfoResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerInfoResponse.h; sourceTree = "<group>"; };
+		26348FB53094353800C80FE2 /* ServerInfoResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerInfoResponse.m; sourceTree = "<group>"; };
+		26348FB63094353800C80FE2 /* WakeOnLanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WakeOnLanManager.h; sourceTree = "<group>"; };
+		26348FB73094353800C80FE2 /* WakeOnLanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakeOnLanManager.m; sourceTree = "<group>"; };
+		26348FB93094353800C80FE2 /* AnyVideoDecoderRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnyVideoDecoderRenderer.h; sourceTree = "<group>"; };
+		26348FBA3094353800C80FE2 /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		26348FBB3094353800C80FE2 /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		26348FBC3094353800C80FE2 /* ConnectionCallbacks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionCallbacks.h; sourceTree = "<group>"; };
+		26348FBD3094353800C80FE2 /* HDRParsingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDRParsingUtils.h; sourceTree = "<group>"; };
+		26348FBE3094353800C80FE2 /* HDRParsingUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDRParsingUtils.m; sourceTree = "<group>"; };
+		26348FBF3094353800C80FE2 /* StreamConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamConfiguration.swift; sourceTree = "<group>"; };
+		26348FC03094353800C80FE2 /* StreamManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamManager.h; sourceTree = "<group>"; };
+		26348FC13094353800C80FE2 /* StreamManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamManager.m; sourceTree = "<group>"; };
+		26348FC23094353800C80FE2 /* VideoDecoderRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDecoderRenderer.h; sourceTree = "<group>"; };
+		26348FC33094353800C80FE2 /* VideoDecoderRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDecoderRenderer.m; sourceTree = "<group>"; };
+		26348FC53094353800C80FE2 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		26348FC63094353800C80FE2 /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		26348FC73094353800C80FE2 /* NSData+Conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		26348FC83094353800C80FE2 /* NSData+Conversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		26348FC93094353800C80FE2 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		26348FCA3094353800C80FE2 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		26348FCC3094353800C80FE2 /* combined_swift_code.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = combined_swift_code.txt; sourceTree = "<group>"; };
+		26348FCD3094353800C80FE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26348FD03094353800C80FE2 /* Limelight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Limelight-Info.plist"; sourceTree = "<group>"; };
+		26348FD13094353800C80FE2 /* Limelight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Limelight-Prefix.pch"; sourceTree = "<group>"; };
+		26348FD23094353800C80FE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26348FD33094353800C80FE2 /* SwrStubs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SwrStubs.c; sourceTree = "<group>"; };
+		26348FD43094353800C80FE2 /* TemporaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryApp.swift; sourceTree = "<group>"; };
+		26348FD53094353800C80FE2 /* TemporaryHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryHost.swift; sourceTree = "<group>"; };
+		26348FD63094353800C80FE2 /* TemporarySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporarySettings.swift; sourceTree = "<group>"; };
+		26348FD73094353800C80FE2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		26348FD93094353800C80FE2 /* Limelight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Limelight.xcdatamodel; sourceTree = "<group>"; };
+		26348FDA3094353800C80FE2 /* Limelight 0.3.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Limelight 0.3.0.xcdatamodel"; sourceTree = "<group>"; };
+		26348FDB3094353800C80FE2 /* Limelight 0.3.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Limelight 0.3.1.xcdatamodel"; sourceTree = "<group>"; };
+		26348FDC3094353800C80FE2 /* Moonlight v1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.0.xcdatamodel"; sourceTree = "<group>"; };
+		26348FDD3094353800C80FE2 /* Moonlight v1.0-2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.0-2.xcdatamodel"; sourceTree = "<group>"; };
+		26348FDE3094353800C80FE2 /* Moonlight v1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.1.xcdatamodel"; sourceTree = "<group>"; };
+		26348FDF3094353800C80FE2 /* Moonlight v1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.2.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE03094353800C80FE2 /* Moonlight v1.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.3.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE13094353800C80FE2 /* Moonlight v1.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.4.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE23094353800C80FE2 /* Moonlight v1.5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.5.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE33094353800C80FE2 /* Moonlight v1.6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.6.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE43094353800C80FE2 /* Moonlight v1.7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.7.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE53094353800C80FE2 /* Moonlight v1.8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.8.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE63094353800C80FE2 /* Moonlight v1.9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.9.xcdatamodel"; sourceTree = "<group>"; };
+		26348FE73094353800C80FE2 /* Moonlight v1.10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.10.xcdatamodel"; sourceTree = "<group>"; };
 		3E0863FF2ECD6BB7006549CB /* Moonlight XrOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Moonlight XrOS.entitlements"; sourceTree = "<group>"; };
 		3E265ECC2F9D5BCA00B0A566 /* AllocatedAudioBufferList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllocatedAudioBufferList.h; sourceTree = "<group>"; };
 		3E265ECD2F9D5BCA00B0A566 /* AllocatedAudioBufferList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllocatedAudioBufferList.m; sourceTree = "<group>"; };
@@ -461,6 +592,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26348F5D3094333700C80FE2 /* libz.tbd in Frameworks */,
+				26348F5B3094331400C80FE2 /* libiconv.tbd in Frameworks */,
 				F7A1193F2B5DDF73001E8686 /* libxml2.tbd in Frameworks */,
 				F7A119402B5DDF73001E8686 /* libmoonlight-common.a in Frameworks */,
 				F7A119432B5DDF73001E8686 /* CoreGraphics.framework in Frameworks */,
@@ -519,6 +652,197 @@
 				04F5ECB02EE37A80009FF87D /* VolumeControlPanelView.swift */,
 			);
 			path = ControlPanel;
+			sourceTree = "<group>";
+		};
+		26348F6D3094353800C80FE2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				26348F5E3094353800C80FE2 /* AllocatedAudioBufferList.h */,
+				26348F5F3094353800C80FE2 /* AllocatedAudioBufferList.m */,
+				26348F603094353800C80FE2 /* AudioStats.h */,
+				26348F613094353800C80FE2 /* AudioStats.m */,
+				26348F623094353800C80FE2 /* AUSpatialMixer.h */,
+				26348F633094353800C80FE2 /* AUSpatialMixer.m */,
+				26348F643094353800C80FE2 /* AVSync.h */,
+				26348F653094353800C80FE2 /* AVSync.m */,
+				26348F663094353800C80FE2 /* CoreAudioHelpers.h */,
+				26348F673094353800C80FE2 /* CoreAudioRenderer.h */,
+				26348F683094353800C80FE2 /* CoreAudioRenderer.m */,
+				26348F693094353800C80FE2 /* OutputAU.h */,
+				26348F6A3094353800C80FE2 /* OutputAU.m */,
+				26348F6B3094353800C80FE2 /* TPCircularBuffer.h */,
+				26348F6C3094353800C80FE2 /* TPCircularBuffer.c */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		26348F743094353800C80FE2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				26348F6E3094353800C80FE2 /* CryptoManager.h */,
+				26348F6F3094353800C80FE2 /* CryptoManager.m */,
+				26348F703094353800C80FE2 /* IdManager.h */,
+				26348F713094353800C80FE2 /* IdManager.m */,
+				26348F723094353800C80FE2 /* mkcert.h */,
+				26348F733094353800C80FE2 /* mkcert.c */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		26348F793094353800C80FE2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				26348F753094353800C80FE2 /* DataManager.h */,
+				26348F763094353800C80FE2 /* DataManager.m */,
+				26348F773094353800C80FE2 /* TemporarySettings.h */,
+				26348F783094353800C80FE2 /* TemporarySettings.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		26348F863094353800C80FE2 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				26348F7A3094353800C80FE2 /* Roboto-BlackItalic.ttf */,
+				26348F7B3094353800C80FE2 /* Roboto-BoldItalic.ttf */,
+				26348F7C3094353800C80FE2 /* Roboto-Italic.ttf */,
+				26348F7D3094353800C80FE2 /* Roboto-LightItalic.ttf */,
+				26348F7E3094353800C80FE2 /* Roboto-MediumItalic.ttf */,
+				26348F7F3094353800C80FE2 /* Roboto-ThinItalic.ttf */,
+				26348F803094353800C80FE2 /* RobotoCondensed-Bold.ttf */,
+				26348F813094353800C80FE2 /* RobotoCondensed-BoldItalic.ttf */,
+				26348F823094353800C80FE2 /* RobotoCondensed-Italic.ttf */,
+				26348F833094353800C80FE2 /* RobotoCondensed-Light.ttf */,
+				26348F843094353800C80FE2 /* RobotoCondensed-LightItalic.ttf */,
+				26348F853094353800C80FE2 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		26348F873094353800C80FE2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				26348F863094353800C80FE2 /* Roboto */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		26348F9B3094353800C80FE2 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				26348F883094353800C80FE2 /* AbsoluteTouchHandler.h */,
+				26348F893094353800C80FE2 /* AbsoluteTouchHandler.m */,
+				26348F8A3094353800C80FE2 /* Controller.h */,
+				26348F8B3094353800C80FE2 /* Controller.m */,
+				26348F8C3094353800C80FE2 /* ControllerSupport.h */,
+				26348F8D3094353800C80FE2 /* ControllerSupport.m */,
+				26348F8E3094353800C80FE2 /* HapticContext.h */,
+				26348F8F3094353800C80FE2 /* HapticContext.m */,
+				26348F903094353800C80FE2 /* KeyboardInputField.h */,
+				26348F913094353800C80FE2 /* KeyboardInputField.m */,
+				26348F923094353800C80FE2 /* KeyboardSupport.h */,
+				26348F933094353800C80FE2 /* KeyboardSupport.m */,
+				26348F943094353800C80FE2 /* Moonlight-Bridging-Header.h */,
+				26348F953094353800C80FE2 /* OnScreenControls.h */,
+				26348F963094353800C80FE2 /* OnScreenControls.m */,
+				26348F973094353800C80FE2 /* RelativeTouchHandler.h */,
+				26348F983094353800C80FE2 /* RelativeTouchHandler.m */,
+				26348F993094353800C80FE2 /* StreamView.h */,
+				26348F9A3094353800C80FE2 /* StreamView.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		26348FB83094353800C80FE2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				26348F9C3094353800C80FE2 /* AppAssetManager.h */,
+				26348F9D3094353800C80FE2 /* AppAssetManager.m */,
+				26348F9E3094353800C80FE2 /* AppAssetResponse.h */,
+				26348F9F3094353800C80FE2 /* AppAssetResponse.m */,
+				26348FA03094353800C80FE2 /* AppAssetRetriever.h */,
+				26348FA13094353800C80FE2 /* AppAssetRetriever.m */,
+				26348FA23094353800C80FE2 /* AppListResponse.h */,
+				26348FA33094353800C80FE2 /* AppListResponse.m */,
+				26348FA43094353800C80FE2 /* ConnectionHelper.h */,
+				26348FA53094353800C80FE2 /* ConnectionHelper.m */,
+				26348FA63094353800C80FE2 /* DiscoveryManager.h */,
+				26348FA73094353800C80FE2 /* DiscoveryManager.m */,
+				26348FA83094353800C80FE2 /* DiscoveryWorker.h */,
+				26348FA93094353800C80FE2 /* DiscoveryWorker.m */,
+				26348FAA3094353800C80FE2 /* HttpManager.h */,
+				26348FAB3094353800C80FE2 /* HttpManager.m */,
+				26348FAC3094353800C80FE2 /* HttpRequest.h */,
+				26348FAD3094353800C80FE2 /* HttpRequest.m */,
+				26348FAE3094353800C80FE2 /* HttpResponse.h */,
+				26348FAF3094353800C80FE2 /* HttpResponse.m */,
+				26348FB03094353800C80FE2 /* MDNSManager.h */,
+				26348FB13094353800C80FE2 /* MDNSManager.m */,
+				26348FB23094353800C80FE2 /* PairManager.h */,
+				26348FB33094353800C80FE2 /* PairManager.m */,
+				26348FB43094353800C80FE2 /* ServerInfoResponse.h */,
+				26348FB53094353800C80FE2 /* ServerInfoResponse.m */,
+				26348FB63094353800C80FE2 /* WakeOnLanManager.h */,
+				26348FB73094353800C80FE2 /* WakeOnLanManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		26348FC43094353800C80FE2 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				26348FB93094353800C80FE2 /* AnyVideoDecoderRenderer.h */,
+				26348FBA3094353800C80FE2 /* Connection.h */,
+				26348FBB3094353800C80FE2 /* Connection.m */,
+				26348FBC3094353800C80FE2 /* ConnectionCallbacks.h */,
+				26348FBD3094353800C80FE2 /* HDRParsingUtils.h */,
+				26348FBE3094353800C80FE2 /* HDRParsingUtils.m */,
+				26348FBF3094353800C80FE2 /* StreamConfiguration.swift */,
+				26348FC03094353800C80FE2 /* StreamManager.h */,
+				26348FC13094353800C80FE2 /* StreamManager.m */,
+				26348FC23094353800C80FE2 /* VideoDecoderRenderer.h */,
+				26348FC33094353800C80FE2 /* VideoDecoderRenderer.m */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		26348FCB3094353800C80FE2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				26348FC53094353800C80FE2 /* Logger.h */,
+				26348FC63094353800C80FE2 /* Logger.m */,
+				26348FC73094353800C80FE2 /* NSData+Conversion.h */,
+				26348FC83094353800C80FE2 /* NSData+Conversion.m */,
+				26348FC93094353800C80FE2 /* Utils.h */,
+				26348FCA3094353800C80FE2 /* Utils.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		26348FD83094353800C80FE2 /* Limelight */ = {
+			isa = PBXGroup;
+			children = (
+				26348F6D3094353800C80FE2 /* Audio */,
+				26348F743094353800C80FE2 /* Crypto */,
+				26348F793094353800C80FE2 /* Database */,
+				26348F873094353800C80FE2 /* Font */,
+				26348F9B3094353800C80FE2 /* Input */,
+				26348FB83094353800C80FE2 /* Network */,
+				26348FC43094353800C80FE2 /* Stream */,
+				26348FCB3094353800C80FE2 /* Utility */,
+				26348FCC3094353800C80FE2 /* combined_swift_code.txt */,
+				26348FCE3094353800C80FE2 /* InfoPlist.strings */,
+				26348FCF3094353800C80FE2 /* Limelight.xcdatamodeld */,
+				26348FD03094353800C80FE2 /* Limelight-Info.plist */,
+				26348FD13094353800C80FE2 /* Limelight-Prefix.pch */,
+				26348FD23094353800C80FE2 /* main.m */,
+				26348FD33094353800C80FE2 /* SwrStubs.c */,
+				26348FD43094353800C80FE2 /* TemporaryApp.swift */,
+				26348FD53094353800C80FE2 /* TemporaryHost.swift */,
+				26348FD63094353800C80FE2 /* TemporarySettings.swift */,
+				26348FD73094353800C80FE2 /* Utils.swift */,
+			);
+			path = Limelight;
 			sourceTree = "<group>";
 		};
 		3E265EDB2F9D5BCA00B0A566 /* Audio */ = {
@@ -657,6 +981,7 @@
 		FB290CE519B2C406004C83CF = {
 			isa = PBXGroup;
 			children = (
+				26348FD83094353800C80FE2 /* Limelight */,
 				3E0863FF2ECD6BB7006549CB /* Moonlight XrOS.entitlements */,
 				F7A119592B5DE1AB001E8686 /* Moonlight Vision */,
 				F7A119072B5DDECC001E8686 /* Moonlight iOS */,
@@ -683,6 +1008,8 @@
 		FB290CF019B2C406004C83CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26348F5C3094333700C80FE2 /* libz.tbd */,
+				26348F5A3094331400C80FE2 /* libiconv.tbd */,
 				F7A11A1F2B5DF46B001E8686 /* RealityKit.framework */,
 				F7A11A1D2B5DF457001E8686 /* UIKit.framework */,
 				98882A032AF60F5300C5A11C /* libavcodec.a */,
@@ -1157,6 +1484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26348FE93094381C00C80FE2 /* SwrStubs.c in Sources */,
 				6581B5F12D5434100022400F /* VideoTypes.swift in Sources */,
 				B19362F02D4ECDD6004F88FA /* NSData+Conversion.m in Sources */,
 				04F5ECA32EE09619009FF87D /* ImmersiveControlPanelView.swift in Sources */,
@@ -1255,11 +1583,23 @@
 		F7A119092B5DDF73001E8686 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "moonlight-common";
+			platformFilters = (
+				ios,
+				xros,
+			);
 			targetProxy = F7A1190A2B5DDF73001E8686 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		26348FCE3094353800C80FE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26348FCD3094353800C80FE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F7A119662B5DE1FD001E868B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1312,7 +1652,7 @@
 					"$(PROJECT_DIR)/libs/**",
 				);
 				INFOPLIST_FILE = "Moonlight copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Moonlight for VisionOS";
+				INFOPLIST_KEY_CFBundleDisplayName = Moonpane;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1329,13 +1669,13 @@
 				MARKETING_VERSION = 11.0.22;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				OTHER_LDFLAGS = "-Wl,-ld_classic";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmgllc.moonlightvisionos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmgllc.moonpane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = xros;
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1344,7 +1684,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				WRAPPER_EXTENSION = app;
 				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
@@ -1374,7 +1714,7 @@
 					"$(PROJECT_DIR)/libs/**",
 				);
 				INFOPLIST_FILE = "Moonlight copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Moonlight for VisionOS";
+				INFOPLIST_KEY_CFBundleDisplayName = Moonpane;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1391,13 +1731,13 @@
 				MARKETING_VERSION = 11.0.22;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				OTHER_LDFLAGS = "-Wl,-ld_classic";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmgllc.moonlightvisionos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmgllc.moonpane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = xros;
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1407,7 +1747,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				WRAPPER_EXTENSION = app;
 				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
@@ -1591,6 +1931,30 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
+		26348FCF3094353800C80FE2 /* Limelight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26348FD93094353800C80FE2 /* Limelight.xcdatamodel */,
+				26348FDA3094353800C80FE2 /* Limelight 0.3.0.xcdatamodel */,
+				26348FDB3094353800C80FE2 /* Limelight 0.3.1.xcdatamodel */,
+				26348FDC3094353800C80FE2 /* Moonlight v1.0.xcdatamodel */,
+				26348FDD3094353800C80FE2 /* Moonlight v1.0-2.xcdatamodel */,
+				26348FDE3094353800C80FE2 /* Moonlight v1.1.xcdatamodel */,
+				26348FDF3094353800C80FE2 /* Moonlight v1.2.xcdatamodel */,
+				26348FE03094353800C80FE2 /* Moonlight v1.3.xcdatamodel */,
+				26348FE13094353800C80FE2 /* Moonlight v1.4.xcdatamodel */,
+				26348FE23094353800C80FE2 /* Moonlight v1.5.xcdatamodel */,
+				26348FE33094353800C80FE2 /* Moonlight v1.6.xcdatamodel */,
+				26348FE43094353800C80FE2 /* Moonlight v1.7.xcdatamodel */,
+				26348FE53094353800C80FE2 /* Moonlight v1.8.xcdatamodel */,
+				26348FE63094353800C80FE2 /* Moonlight v1.9.xcdatamodel */,
+				26348FE73094353800C80FE2 /* Moonlight v1.10.xcdatamodel */,
+			);
+			currentVersion = 26348FE73094353800C80FE2 /* Moonlight v1.10.xcdatamodel */;
+			path = Limelight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		FB290D0519B2C406004C83CF /* Limelight.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

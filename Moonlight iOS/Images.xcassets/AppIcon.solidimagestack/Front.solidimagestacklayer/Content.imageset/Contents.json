@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "MoonlightIcon-Front.png",
       "idiom" : "vision",
       "scale" : "2x"
     }
